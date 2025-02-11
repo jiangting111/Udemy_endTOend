@@ -140,3 +140,119 @@ Source-Age: 0
 [2025-02-10 13:08:46,620: INFO: common: created directory at: artifacts]
 [2025-02-10 13:08:46,620: INFO: common: created directory at: artifacts/data_validation]
 [2025-02-10 13:08:46,640: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2025-02-11 13:21:09,633: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:21:09,639: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:21:09,647: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:21:09,648: INFO: common: created directory at: artifacts]
+[2025-02-11 13:21:09,649: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-11 13:21:49,659: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:21:49,661: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:21:49,664: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:21:49,665: INFO: common: created directory at: artifacts]
+[2025-02-11 13:21:49,666: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-11 13:21:49,693: INFO: 2043822624: splitted data into train and test sets]
+[2025-02-11 13:21:49,694: INFO: 2043822624: (1199, 12)]
+[2025-02-11 13:21:49,695: INFO: 2043822624: (400, 12)]
+[2025-02-11 13:30:27,659: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2025-02-11 13:30:27,662: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:30:27,662: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:30:27,664: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:30:27,665: INFO: common: created directory at: artifacts]
+[2025-02-11 13:30:27,665: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-11 13:30:27,665: INFO: data_ingestion: File already exists]
+[2025-02-11 13:30:27,676: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2025-02-11 13:30:27,676: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2025-02-11 13:30:27,678: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:30:27,678: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:30:27,680: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:30:27,681: INFO: common: created directory at: artifacts]
+[2025-02-11 13:30:27,681: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-11 13:30:27,681: ERROR: main: 'DataTransformationConfig' object has no attribute 'unzip_data_dir']
+Traceback (most recent call last):
+  File "D:\TJ GT\udemy_mlops\S18_End_to_end\Udemy_endTOend\main.py", line 19, in <module>
+    obj.initiate_data_validation()
+  File "D:\TJ GT\udemy_mlops\S18_End_to_end\Udemy_endTOend\src\Udemy_endTOend\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation.validate_all_columns()
+  File "D:\TJ GT\udemy_mlops\S18_End_to_end\Udemy_endTOend\src\Udemy_endTOend\components\data_validation.py", line 28, in validate_all_columns
+    raise e
+  File "D:\TJ GT\udemy_mlops\S18_End_to_end\Udemy_endTOend\src\Udemy_endTOend\components\data_validation.py", line 13, in validate_all_columns
+    data = pd.read_csv(self.config.unzip_data_dir)
+AttributeError: 'DataTransformationConfig' object has no attribute 'unzip_data_dir'
+[2025-02-11 13:32:09,933: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2025-02-11 13:32:09,936: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:32:09,936: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:32:09,938: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:32:09,939: INFO: common: created directory at: artifacts]
+[2025-02-11 13:32:09,939: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-11 13:32:09,939: INFO: data_ingestion: File already exists]
+[2025-02-11 13:32:09,941: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2025-02-11 13:32:09,941: INFO: main: >>>>> stage Data Validation Stage started <<<<<]
+[2025-02-11 13:32:09,943: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:32:09,944: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:32:09,946: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:32:09,946: INFO: common: created directory at: artifacts]
+[2025-02-11 13:32:09,946: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-11 13:32:09,946: ERROR: main: 'DataTransformationConfig' object has no attribute 'unzip_data_dir']
+Traceback (most recent call last):
+  File "D:\TJ GT\udemy_mlops\S18_End_to_end\Udemy_endTOend\main.py", line 20, in <module>
+    obj.initiate_data_validation()
+  File "D:\TJ GT\udemy_mlops\S18_End_to_end\Udemy_endTOend\src\Udemy_endTOend\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation.validate_all_columns()
+  File "D:\TJ GT\udemy_mlops\S18_End_to_end\Udemy_endTOend\src\Udemy_endTOend\components\data_validation.py", line 28, in validate_all_columns
+    raise e
+  File "D:\TJ GT\udemy_mlops\S18_End_to_end\Udemy_endTOend\src\Udemy_endTOend\components\data_validation.py", line 13, in validate_all_columns
+    data = pd.read_csv(self.config.unzip_data_dir)
+AttributeError: 'DataTransformationConfig' object has no attribute 'unzip_data_dir'
+[2025-02-11 13:34:14,365: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2025-02-11 13:34:14,367: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:34:14,368: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:34:14,370: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:34:14,370: INFO: common: created directory at: artifacts]
+[2025-02-11 13:34:14,370: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-11 13:34:14,370: INFO: data_ingestion: File already exists]
+[2025-02-11 13:34:14,374: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2025-02-11 13:34:14,375: INFO: main: >>>>> stage Data Validation Stage started <<<<<]
+[2025-02-11 13:34:14,377: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:34:14,377: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:34:14,379: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:34:14,380: INFO: common: created directory at: artifacts]
+[2025-02-11 13:34:14,380: INFO: common: created directory at: artifacts/data_validation]
+[2025-02-11 13:34:14,405: INFO: main: >>>>> stage Data Validation Stage completed <<<<<]
+[2025-02-11 13:34:14,405: INFO: main: >>>>> stage Data Transformation Stage started <<<<<]
+[2025-02-11 13:34:14,407: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:34:14,408: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:34:14,410: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:34:14,410: INFO: common: created directory at: artifacts]
+[2025-02-11 13:34:14,410: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-11 13:34:14,410: ERROR: main: 'DataTransformation' object has no attribute 'validate_all_columns']
+Traceback (most recent call last):
+  File "D:\TJ GT\udemy_mlops\S18_End_to_end\Udemy_endTOend\main.py", line 30, in <module>
+    obj.initiate_data_transformation()
+  File "D:\TJ GT\udemy_mlops\S18_End_to_end\Udemy_endTOend\src\Udemy_endTOend\pipeline\data_transformation_pipeline.py", line 15, in initiate_data_transformation
+    data_transformation.validate_all_columns()
+AttributeError: 'DataTransformation' object has no attribute 'validate_all_columns'
+[2025-02-11 13:34:56,390: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2025-02-11 13:34:56,392: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:34:56,392: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:34:56,396: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:34:56,396: INFO: common: created directory at: artifacts]
+[2025-02-11 13:34:56,396: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-11 13:34:56,396: INFO: data_ingestion: File already exists]
+[2025-02-11 13:34:56,398: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2025-02-11 13:34:56,398: INFO: main: >>>>> stage Data Validation Stage started <<<<<]
+[2025-02-11 13:34:56,400: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:34:56,400: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:34:56,402: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:34:56,403: INFO: common: created directory at: artifacts]
+[2025-02-11 13:34:56,403: INFO: common: created directory at: artifacts/data_validation]
+[2025-02-11 13:34:56,421: INFO: main: >>>>> stage Data Validation Stage completed <<<<<]
+[2025-02-11 13:34:56,421: INFO: main: >>>>> stage Data Transformation Stage started <<<<<]
+[2025-02-11 13:34:56,423: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-11 13:34:56,424: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-11 13:34:56,426: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-02-11 13:34:56,426: INFO: common: created directory at: artifacts]
+[2025-02-11 13:34:56,426: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-11 13:34:56,443: INFO: data_transformation: splitted data into train and test sets]
+[2025-02-11 13:34:56,443: INFO: data_transformation: (1199, 12)]
+[2025-02-11 13:34:56,443: INFO: data_transformation: (400, 12)]
+[2025-02-11 13:34:56,443: INFO: main: >>>>> stage Data Transformation Stage completed <<<<<]
